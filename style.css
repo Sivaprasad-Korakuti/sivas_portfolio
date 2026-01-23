@@ -58,12 +58,12 @@
 }
 
 .hero_text h1 {
-    font-size: 40px;
+    font-size: 80pt;
 }
 
 .hero_text p {
     margin: 15px 0;
-    font-size: 18px;
+    font-size: 32pt;
 }
 
 .hero_text button {
@@ -222,4 +222,5 @@
     background: #141414;
     padding: 10px;
     text-align: center;
+
 }
