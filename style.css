@@ -71,6 +71,7 @@
     padding: 7px 12px;
     border-radius: 15px;
     background-color: rgb(181, 180, 180);
+    font-size:19pt;
     border: none;
     box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.774), -2px -2px 8px rgba(218, 212, 212, 0.865);
     animation: ease-in;
@@ -224,4 +225,5 @@
     text-align: center;
 
 }
+
 
