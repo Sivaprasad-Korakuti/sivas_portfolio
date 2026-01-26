@@ -13,8 +13,8 @@ body {
 }
 
 #value {
-    font-size:25pt;
-    font-weight:bold;
+    font-size: 25pt;
+    font-weight: bold;
     display: flex;
     justify-content: center;
 }
@@ -36,5 +36,4 @@ body {
     border: none;
     background-color: blue;
     color: white;
-
 }
