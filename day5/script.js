@@ -10,35 +10,51 @@
 // update();
 // setInterval(update, 1000);
 
-let count = 0;
+document.addEventListener("DOMContentLoaded", function () {
+    let count = 0;
 
+    const setcount = document.getElementById('value');
+    const incrementBtn = document.getElementById('increment');
+    const decrementBtn = document.getElementById('decrement');
+    const resetBtn = document.getElementById('reset');
 
-function increment() {
-    let setcount = document.getElementById("value");
-    count++;
-    setcount.innerHTML = count;
+    incrementBtn.addEventListener('click', () => {
+        count++;
+        updateDisplay();
+        updatecolor();
+    });
 
-    if (count > 0) {
-        setcount.style.color = "green";
+    decrementBtn.addEventListener('click', () => {
+        count--;
+        updateDisplay();
+        updatecolor();
+    });
+
+    resetBtn.addEventListener('click', () => {
+        count = 0;
+        updateDisplay();
+        updatecolor();
+    });
+
+    const updateDisplay = () => {
+        setcount.innerHTML = count;
     }
-}
-function decrement() {
-    let setcount = document.getElementById("value");
-    count--;
-    setcount.innerHTML = count;
-
-    if (count < 0) {
-        setcount.style.color = "red";
-        alert("Value can't be negative ");
-        reset();
+    const updatecolor = () => {
+        if (count > 0) {
+            setcount.style.color = "green";
+        }
+        else if (count < 0) {
+            setcount.style.color = "red";
+            alert("Value can't be negative ");
+            reset();
+        }
+        else if (count === 0) {
+            setcount.style.color = "black";
+        }
     }
-
-}
-function reset() {
-    let setcount = document.getElementById("value");
-    count = 0;
-    setcount.innerHTML = count;
-    if (count === 0) {
-        setcount.style.color = "black";
+    function reset() {
+        count = 0;
+        updateDisplay();
+        updatecolor();
     }
-}
+});
