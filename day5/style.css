@@ -1,0 +1,37 @@
+body {
+    display: flex;
+    color: black;
+    background-color: rgb(11, 255, 243);
+    margin: 10 auto;
+    justify-content: center;
+    align-items: center;
+}
+
+.heading {
+    display: flex;
+    justify-content: center;
+}
+
+#value {
+    display: flex;
+    justify-content: center;
+}
+
+.counter {
+    border: 2px solid black;
+    padding: 20px;
+}
+
+.buttons {
+    padding: 20px;
+
+}
+
+.buttons button {
+    width: 150px;
+    padding: 10px 20px;
+    border-radius: 20px;
+    border: none;
+    background-color: blue;
+    color: white;
+}
