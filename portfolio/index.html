@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/jpg" href="image.png">
+    <script src="https://kit.fontawesome.com/2cdc78fa6e.js" crossorigin="anonymous"></script>
+    <script src="jscript.js"></script>
+    <title>Portfolio</title>
+</head>
+
+<body>
+    <!--Navbar section-->
+    <nav class="navbar">
+
+        <h2 class="nav-logo">
+            <i class="fa-regular fa-user"></i>
+            Siva Prasad
+        </h2>
+        <ul><a href="home.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">contact</a>
+        </ul>
+    </nav>
+    <!-- Hero section-->
+
+    <section class="hero">
+        <div class="hero_text">
+            <h1>Siva Prasad</h1>
+            <p>A Beginner Web Developer Learning HTML & CSS</p>
+            <section class="sicon">
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-discord"></i>
+                <i class="fa-brands fa-github"></i>
+                <i class="fa-brands fa-square-linkedin"></i>
+            </section>
+            <button>Hire Me</button>
+            <!--Hero section text-->
+        </div>
+        <div class="hero_img">
+            <!--Hero section image-->
+            <img src="img.jpg">
+        </div>
+    </section>
+    <section class="skills">
+        <h2>My Skills</h2>
+        <div class="skill_box">
+            <div class="skill">HTML</div>
+            <div class="skill">CSS</div>
+            <div class="skill">JAVA SCRIPT</div>
+            <div class="skill">JAVA</div>
+            <div class="skill">NO SQL</div>
+            <div class="skill">CLOUD</div>
+        </div>
+    </section>
+    <!--About section-->
+    <div class="about">
+        <h2>About Me</h2>
+        <p><span style="font-size:25pt;font-weight:bolder;font-family:Arial, Helvetica, sans-serif;">Hello</span>, my
+            name is Siva. I am currently a third-year
+            Computer Science
+            student
+            (CSE-D) with a
+            strong focus on
+            Full-Stack Development and AI. I have hands-on experience building web applications using the MERN stack and
+            Java, including my recent project, Pharmo QR.
+
+            Beyond development, I am deeply interested in emerging technologies like Quantum Computing and am currently
+            preparing for the GATE exam to further specialize in core CS fundamentals. I am also working toward a career
+            in software engineering, with a particular interest in companies like Cognizant and Capsitech."</p>
+    </div>
+
+    <!--Contact section-->
+    <section class="contact">
+        <h2>Contact Me</h2>
+        <form action="https://formspree.io/f/xkojjzoo" method="POST" class="form">
+            <label>Name:
+                <input name="name" placeholder="your name" id="name">
+            </label><br /><br />
+            <label>
+                Email:
+                <input type="email" name="email" placeholder="your emial">
+            </label><br /><br />
+            <label>
+                Message:
+                <textarea name="message" placeholder="message"></textarea>
+            </label>
+            <!-- your other form fields go here -->
+            <button type="submit">Send</button>
+            <button type="reset">reset</button>
+        </form>
+    </section>
+</body>
+<footer class="footer">
+    <p>&copy; All rights reserved my me.</p>
+</footer>
+
+</html>
